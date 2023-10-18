@@ -1,0 +1,175 @@
+/* Modifica tu archivo CSS (TodoApp.css) */
+
+/* Estilo general para el contenedor de la aplicación */
+/* Establece la imagen de fondo */
+/* Establece la imagen de fondo y el tamaño */
+.containerTodo {
+  background-image: url('/public/img/super.png'); /* Ruta de tu imagen */
+  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el contenedor */
+  background-position: center; /* Centra la imagen en el contenedor */
+  background-attachment: fixed; /* Fija la imagen en su posición para que se mueva con el desplazamiento de la página */
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  height: 100vh; /* Establece la altura al 100% de la ventana del navegador */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: grayscale(100%);
+  opacity: calc(92%);
+
+ 
+}
+/* Centro el h1 */
+h1 {
+  
+  text-align: center; /* Centrar el título */
+  text-transform: uppercase; /* Convierte el texto a mayúsculas */
+  font-family: "Tu-Fuente-Preferida", sans-serif; /* Cambia "Tu-Fuente-Preferida" a la fuente deseada */
+  color: #333; /* Color del texto */
+  margin-bottom: 20px;
+}
+
+
+
+/* Estilo para el encabezado de la aplicación */
+.shopping-list {
+  background-color: #fff; /* Fondo blanco */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* Estilo para el formulario y la lista */
+form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background: #fff;
+  border-radius: 5px;
+  width: 100%;
+  overflow: visible;
+  white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+  text-overflow: ellipsis; /* Agrega puntos suspensivos al final del texto si no cabe */
+}
+
+
+button.add-button {
+  background-color: #333; /* Fondo gris oscuro */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Estilo para la lista de elementos */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc; /* Borde gris claro */
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+/* Estilo para los botones de ajuste y eliminar */
+.quantity {
+  display: flex;
+  align-items: center;
+}
+
+button.adjust-button {
+  background: #333;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  margin: 0 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button.adjust-button:hover {
+  background: #222; /* Fondo gris más oscuro al pasar el mouse */
+}
+
+button.delete-button {
+  background: #333;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button.delete-button:hover {
+  background: #222;
+}
+
+/* Estilo para el enlace "Vaciar cesta" */
+.clear-cart-button {
+  display: block;
+  text-align: center;
+  padding: 10px 20px;
+  margin-top: 20px;
+  background: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none; /* Quita el subrayado del enlace */
+}
+
+.clear-cart-button:hover {
+  background: #222;
+}
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc; /* Borde gris claro */
+}
+
+.item-info {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.item-name {
+  flex: 1; /* Toma todo el espacio restante */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.list-item:last-child {
+  border-bottom: none;
+}
+
+
